@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <header>
+      <h1>☁ Weather App</h1>
+    </header>
+
+    <main>
+
+      <form id="searchForm" class="search-box">
+        <input type="text" id="cityInput" placeholder="Lagos" />
+        <button type="submit">search</button>
+      </form>
+
+      <p id="message"></p>
+
+      <section class="weather-card">
+        <div id="mainIcon" class="main-icon">☀</div>
+
+        <h2 id="cityName">Lagos, Nigeria</h2>
+
+        <div class="temp">
+          <span id="temperature">32</span>
+          <span>°C</span>
+        </div>
+
+        <p id="description">Sunny • Feels like 36°C</p>
+      </section>
+
+      <section class="stats">
+        <div>
+          <p>Humidity</p>
+          <h3 id="humidity">78%</h3>
+        </div>
+
+        <div>
+          <p>Wind</p>
+          <h3 id="wind">14 km/h</h3>
+        </div>
+
+        <div>
+          <p>UV Index</p>
+          <h3 id="uv">High</h3>
+        </div>
+      </section>
+
+      <section class="forecast">
+        <h3>5-DAY FORECAST</h3>
+
+        <div id="forecastList">
+          <!-- Forecast will show here -->
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
